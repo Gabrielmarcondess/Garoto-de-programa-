@@ -1,81 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="ptBR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-            #tabUm{border: solid 2px black; background-color: black}
-            #linhaUm{background-color: gray; border: solid black}
-            .linhaDois{background-color: cornflowerblue}
-            #tabDois{color: green;}
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-          
-        </nav>
+    <header id="top">
+        <h1>Meu repositorio</h1>
     </header>
-    <main>
-        <table id="tabUm">
-            <thead>
-                <tr id="linhaUm">
-                    <td>Nome</td>
-                    <td>ra</td>
-                    <td>turma</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="linhaDois">
-                    <td>Gabriel</td>
-                    <td>2025105377</td>
-                    <td>C</td>
-                </tr>
-            </tbody>
-            
-        </table>
-        <table id="tabDois">
-            <thead>
-               
-                <tr>
-                    <td>Id</td>
-                    <td>Descrição</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Mouse</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>2</td>
-                    <td>Monitor</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>CPU</td>
-                </tr>
-            </tbody>
-        </table>
-        <table>
-            <thead>
-                <tr>
-                    <td> Curso</td>
-                    <td> Turma</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <td>Engenharia</td>
-                <td>ESNC</td>
-                </tr>
-            </tbody>
-
-
-
-        </table>
-    </main>
+    <form>
+        <div>
+        <label for="fname">Nome:</label>
+        <input type="text" id="fname">
+        <label for="sname">Sobrenome:</label>
+        <input type="text" id="sname">
+        </div>
+        <div>
+        <Label for="Pidade">Idade:</Label>
+        <input type="number" id="Pidade">
+        <label for="Pdata">Data</label>
+        <input type="date" id="Pdata">
+        </div>
+        <div>
+        <label for="A">A</label>
+        <input type="radio"id="A" name="reposta_questao_10">
+        <Label for="B">B</Label>
+        <input type="radio"id="B"  name="reposta_questao_10">
+        <label for="C">C</label>
+        <input type="radio"id="C"  name="reposta_questao_10">        
+    </div>
+    <div>
+        <label for="cheak">Aceito termos</label>
+        <input type="checkbox" id="cheak">
+    </div>
+    <div>
+        <label for="select"></label>
+        <input type="se">
+    </div>
+    </form>
 </body>
 </html>
