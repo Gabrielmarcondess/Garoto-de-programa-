@@ -1,44 +1,25 @@
 <!DOCTYPE html>
-<html lang="ptBR">
+<html lang="prBR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="top">
-        <h1>Meu repositorio</h1>
-    </header>
     <form>
         <div>
-        <label for="fname">Nome:</label>
-        <input type="text" id="fname">
-        <label for="sname">Sobrenome:</label>
-        <input type="text" id="sname">
-        </div>
-        <div>
-        <Label for="Pidade">Idade:</Label>
-        <input type="number" id="Pidade">
-        <label for="Pdata">Data</label>
-        <input type="date" id="Pdata">
-        </div>
-        <div>
-        <label for="A">A</label>
-        <input type="radio"id="A" name="reposta_questao_10">
-        <Label for="B">B</Label>
-        <input type="radio"id="B"  name="reposta_questao_10">
-        <label for="C">C</label>
-        <input type="radio"id="C"  name="reposta_questao_10">        
+        <label for="txt_nome">nome</label>
+        <input type="text" id="txt_nome">
     </div>
     <div>
-        <label for="cheak">Aceito termos</label>
-        <input type="checkbox" id="cheak">
-    </div>
-    <div>
-        <label for="select"></label>
-        <input type="se">
+        <label for="turma">Turma</label>
+        <input type="txt" id="turma">
+    </div> 
+    <input type="button" value="salvar" onclick="salvar()">
+    <div id="msg">
+      
     </div>
     </form>
+    <Script src="script.js"></Script>
 </body>
 </html>
