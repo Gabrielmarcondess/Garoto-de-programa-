@@ -1,0 +1,71 @@
+using System;
+float floatt()
+{
+    Console.WriteLine("escreva o numero: ");
+    string text = Console.ReadLine();
+    float res = 0;
+    float.TryParse(text, out res );
+    return res;
+}
+int inteiro()
+{
+    Console.WriteLine("escreva o numero: ");
+    string text = Console.ReadLine();
+    int res = 0;
+    int.TryParse(text, out res);
+    return res;
+}
+string sinal()
+{
+    Console.WriteLine("escreva o operador:| + | -| * | /");
+    string texto = Console.ReadLine();
+    return texto;
+}
+float soma(float var, float var2)
+{
+    float result = var + var2;
+    return result;
+}
+float div(float var, float var2)
+{
+    float divisao = var / var2;
+    return divisao;
+}
+float mult(float var, float var2)
+{
+    float mul = var * var2;
+    return mul;
+}
+float sub(float var, float var2)
+{
+    float subb = var - var2;
+    return subb;
+}
+string texxt = sinal();
+float v1 = floatt();
+float v2 = floatt();
+float som = soma(v1, v2);
+float divir = div(v1, v2);
+float mu = mult(v1, v2);
+float subi = sub(v1, v2);
+
+if (texxt == "/") {
+    Console.WriteLine($"o resultado da divisao e: {divir}"); 
+}
+else if (texxt == "+")
+{
+    Console.WriteLine($"o resultado da soma e: {som}");
+}
+else if(texxt == "-")
+{
+    Console.WriteLine($"o resultado da soma e: {subi}");
+}
+else if (texxt == "*")
+{
+    Console.WriteLine($"o resultado da soma e: {mu}");
+}
+else
+    {
+        Console.WriteLine("operador nao identificado");
+    }
+
